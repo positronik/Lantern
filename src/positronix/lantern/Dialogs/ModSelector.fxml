@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fx:id="modScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="446.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox fx:id="modVBox">
+         <children>
+            <TitledPane fx:id="modAbilityTitledPane" expanded="false" maxWidth="-Infinity" prefWidth="427.0" text="Ability Scores">
+              <content>
+                <AnchorPane fx:id="modAbilityAnchorPane" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefWidth="427.0">
+                     <children>
+                        <Button fx:id="modStr" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefWidth="102.0" text="Strength" />
+                        <Button fx:id="modDex" layoutX="126.0" layoutY="14.0" mnemonicParsing="false" prefWidth="102.0" text="Dexterity" />
+                        <Button fx:id="modCon" layoutX="238.0" layoutY="14.0" mnemonicParsing="false" prefWidth="102.0" text="Constitution" />
+                        <Button fx:id="modInt" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" prefWidth="102.0" text="Intelligence" />
+                        <Button fx:id="modWis" layoutX="126.0" layoutY="55.0" mnemonicParsing="false" prefWidth="102.0" text="Wisdom" />
+                        <Button fx:id="modCha" layoutX="238.0" layoutY="55.0" mnemonicParsing="false" prefWidth="102.0" text="Charisma" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane expanded="false" maxWidth="-Infinity" prefWidth="427.0" text="Saving Throws">
+              <content>
+                <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefWidth="427.0">
+                     <children>
+                        <Button fx:id="modFort" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Fortitude" />
+                        <Button fx:id="modRef" layoutX="105.0" layoutY="14.0" mnemonicParsing="false" prefWidth="81.0" text="Reflex" />
+                        <Button fx:id="modWill" layoutX="196.0" layoutY="14.0" mnemonicParsing="false" prefWidth="81.0" text="Will" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane expanded="false" maxWidth="-Infinity" prefWidth="427.0" text="Combat">
+              <content>
+                <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefWidth="427.0">
+                     <children>
+                        <Button fx:id="modInit" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Initiative">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modSpeed" layoutX="101.0" layoutY="14.0" mnemonicParsing="false" text="Speed">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modAC" layoutX="173.0" layoutY="14.0" mnemonicParsing="false" text="Armor Class">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modWepAtk" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Weapon Attack">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modWepDmg" layoutX="146.0" layoutY="55.0" mnemonicParsing="false" text="Weapon Damage">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modMeleeAtk" layoutX="14.0" layoutY="96.0" mnemonicParsing="false" text="Melee Attack">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modMeleeDmg" layoutX="131.0" layoutY="96.0" mnemonicParsing="false" text="Melee Damage">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modRangedAtk" layoutX="14.0" layoutY="137.0" mnemonicParsing="false" text="Ranged Attack">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modRangedDmg" layoutX="141.0" layoutY="137.0" mnemonicParsing="false" text="Ranged Damage">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modCMB" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" text="Combat Maneuver Bonus">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="modCMD" layoutX="212.0" layoutY="178.0" mnemonicParsing="false" text="Combat Maneuver Defense">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane expanded="false" maxWidth="-Infinity" prefWidth="427.0" text="Skills">
+              <content>
+                <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="427.0">
+                     <children>
+                        <ListView fx:id="skillModList" editable="true" layoutX="14.0" layoutY="14.0" prefHeight="303.0" prefWidth="397.0" />
+                        <Button fx:id="modSkill" layoutX="14.0" layoutY="317.0" minHeight="0.0" mnemonicParsing="false" prefWidth="397.0" text="Confirm">
+                           <padding>
+                              <Insets bottom="1.0" top="1.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

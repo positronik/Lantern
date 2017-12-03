@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You've earned an ability score increase! Choose an ability score to gain 1 point." textAlignment="CENTER" wrappingWidth="260.60888671875" />
+      <RadioButton fx:id="strIncrease" layoutX="51.0" layoutY="62.0" mnemonicParsing="false" text="Strength" />
+      <RadioButton fx:id="dexIncrease" layoutX="51.0" layoutY="83.0" mnemonicParsing="false" text="Dexterity" />
+      <RadioButton fx:id="conIncrease" layoutX="51.0" layoutY="104.0" mnemonicParsing="false" text="Constitution" />
+      <RadioButton fx:id="intIncrease" layoutX="51.0" layoutY="126.0" mnemonicParsing="false" text="Intelligence" />
+      <RadioButton fx:id="wisIncrease" layoutX="51.0" layoutY="147.0" mnemonicParsing="false" text="Wisdom" />
+      <RadioButton fx:id="chaIncrease" layoutX="51.0" layoutY="168.0" mnemonicParsing="false" text="Charisma" />
+      <Text fx:id="curstr" layoutX="181.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="curdex" layoutX="181.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="curcon" layoutX="181.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="curint" layoutX="181.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="curwis" layoutX="181.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="curcha" layoutX="181.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Button fx:id="applyIncrease" layoutX="115.0" layoutY="194.0" mnemonicParsing="false" text="Apply" />
+   </children>
+</AnchorPane>

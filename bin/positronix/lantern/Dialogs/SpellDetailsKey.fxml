@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="389.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V - Verbal component" />
+      <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S - Somatic component" />
+      <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M - Material component" />
+      <Text layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F - Focus component" />
+      <Text layoutX="14.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DF - Divine focus component" />
+      <Text layoutX="14.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/ - Generally used to mean &quot;per,&quot; e.g. &quot;1 hour/level&quot;. In tables within a spell's description, the data separated by dashes, / might replace — to mean &quot;none&quot;." wrappingWidth="360.5087890625" />
+      <Text layoutX="14.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(D) - Dismissible; you can dismiss the spell at will with a word or gesture while within the spell's range." wrappingWidth="360.5087890625" />
+      <Text layoutX="14.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(S) - Shapeable; a shaped effect or area can have no dimension smaller than 10 feet." wrappingWidth="360.5087890625" />
+      <Text layoutX="14.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HD - Hit Die" wrappingWidth="360.5087890625" />
+      <Text layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DC - Difficulty class" wrappingWidth="360.5087890625" />
+      <Text layoutX="14.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Concentration - If interrupted while casting a spell, you must make a successful concentration check of varying DC or lose the spell." wrappingWidth="360.5087890625" />
+      <Button fx:id="spellKeyOK" layoutX="174.0" layoutY="382.0" mnemonicParsing="false" text="OK" />
+   </children>
+</AnchorPane>

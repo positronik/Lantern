@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humans, half-elves, and half-orcs get a racial +2 bonus to a choice of one ability score. Choose below:" textAlignment="CENTER" wrappingWidth="260.60888671875" />
+      <RadioButton fx:id="strBonus" layoutX="90.0" layoutY="83.0" mnemonicParsing="false" text="Strength" />
+      <RadioButton fx:id="dexBonus" layoutX="90.0" layoutY="104.0" mnemonicParsing="false" text="Dexterity" />
+      <RadioButton fx:id="conBonus" layoutX="90.0" layoutY="125.0" mnemonicParsing="false" text="Constitution" />
+      <RadioButton fx:id="intBonus" layoutX="90.0" layoutY="147.0" mnemonicParsing="false" text="Intelligence" />
+      <RadioButton fx:id="wisBonus" layoutX="90.0" layoutY="168.0" mnemonicParsing="false" text="Wisdom" />
+      <RadioButton fx:id="chaBonus" layoutX="90.0" layoutY="189.0" mnemonicParsing="false" text="Charisma" />
+      <Button fx:id="applyBonus" layoutX="115.0" layoutY="215.0" mnemonicParsing="false" text="Apply" />
+   </children>
+</AnchorPane>

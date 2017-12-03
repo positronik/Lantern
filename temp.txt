@@ -1,0 +1,14 @@
+Character= 
+Alignment= 
+Player= 
+Level= 
+Deity= 
+Homeland= 
+Race=null 
+Size= 
+Gender= 
+Age= 
+Height= 
+Weight= 
+Hair= 
+Eyes= 

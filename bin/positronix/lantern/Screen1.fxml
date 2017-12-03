@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?scenebuilder-background-color 0x00ffa3ff?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="933.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="-1.0" prefHeight="29.0" prefWidth="927.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="load" mnemonicParsing="false" text="Load" />
+            </items>
+          </Menu>
+          <Menu fx:id="edit" mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutY="28.0" prefHeight="904.0" prefWidth="927.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="First Page">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="73.0" text="Character Name" />
+                        <Label layoutX="316.0" layoutY="73.0" text="Alignment" />
+                        <Label layoutX="542.0" layoutY="73.0" text="Player" />
+                        <Label layoutX="716.0" layoutY="73.0" text="Character Level" />
+                        <Label layoutX="122.0" layoutY="146.0" text="Deity" />
+                        <Label layoutX="316.0" layoutY="138.0" text="Homeland" />
+                        <Label layoutX="546.0" layoutY="138.0" text="Race" />
+                        <Label layoutX="754.0" layoutY="146.0" text="Size" />
+                        <Label layoutX="69.0" layoutY="221.0" text="Gender" />
+                        <Label layoutX="220.0" layoutY="221.0" text="Age" />
+                        <Label layoutX="325.0" layoutY="222.0" text="Height" />
+                        <Label layoutX="454.0" layoutY="221.0" text="Weight" />
+                        <Label layoutX="597.0" layoutY="221.0" text="Hair" />
+                        <Label layoutX="752.0" layoutY="222.0" text="Eyes" />
+                        <TextField fx:id="name" layoutX="55.0" layoutY="47.0" text="Dicks McGee" />
+                        <TextField fx:id="align" layoutX="264.0" layoutY="47.0" />
+                        <TextField fx:id="player" layoutX="477.0" layoutY="47.0" />
+                        <TextField fx:id="level" layoutX="682.0" layoutY="47.0" />
+                        <TextField fx:id="deity" layoutX="54.0" layoutY="112.0" />
+                        <TextField fx:id="homeland" layoutX="264.0" layoutY="112.0" />
+                        <TextField fx:id="race" layoutX="477.0" layoutY="112.0" />
+                        <TextField fx:id="size" layoutX="683.0" layoutY="112.0" />
+                        <TextField fx:id="gender" layoutX="62.0" layoutY="187.0" prefHeight="26.0" prefWidth="62.0" />
+                        <TextField fx:id="age" layoutX="202.0" layoutY="188.0" prefHeight="26.0" prefWidth="62.0" />
+                        <TextField fx:id="height" layoutX="316.0" layoutY="188.0" prefHeight="26.0" prefWidth="62.0" />
+                        <TextField fx:id="weight" layoutX="446.0" layoutY="187.0" prefHeight="26.0" prefWidth="62.0" />
+                        <TextField fx:id="hair" layoutX="579.0" layoutY="188.0" prefHeight="26.0" prefWidth="62.0" />
+                        <TextField fx:id="eyes" layoutX="738.0" layoutY="187.0" prefHeight="26.0" prefWidth="62.0" />
+                        <Label layoutX="36.0" layoutY="293.0" text="Strength">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="321.0" text="Dexterity">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="351.0" text="Constitution">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="23.0" layoutY="382.0" text="Intelligence">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="415.0" text="Wisdom">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="446.0" text="Charisma">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="107.0" layoutY="272.0" prefHeight="18.0" prefWidth="98.0" text="Ability Score" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="272.0" prefHeight="18.0" prefWidth="63.0" text="Modifier" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="294.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="322.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="352.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="383.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="416.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="130.0" layoutY="447.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="294.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="322.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="352.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="383.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="416.0" prefHeight="4.0" prefWidth="40.0" />
+                        <TextField alignment="CENTER" layoutX="211.0" layoutY="447.0" prefHeight="4.0" prefWidth="40.0" />
+                        <Label layoutX="288.0" layoutY="274.0" text="Hit Points">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="493.0" layoutY="274.0" text="Speed">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="548.0" layoutY="275.0" prefHeight="25.0" prefWidth="98.0" />
+                        <Label layoutX="293.0" layoutY="306.0" text="Initiative">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="372.0" layoutY="307.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="423.0" layoutY="307.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="477.0" layoutY="307.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="372.0" layoutY="275.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="423.0" layoutY="275.0" prefHeight="25.0" prefWidth="47.0" />
+                        <Label layoutX="378.0" layoutY="332.0" text="TOTAL" />
+                        <Label layoutX="422.0" layoutY="332.0" text="Dex Mod" />
+                        <Label layoutX="474.0" layoutY="332.0" text="Misc Mod" />
+                        <Label layoutX="378.0" layoutY="255.0" text="TOTAL" />
+                        <Label layoutX="438.0" layoutY="255.0" text="DR" />
+                        <Label layoutX="291.0" layoutY="351.0" text="AC">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="320.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="641.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="423.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="477.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="528.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="585.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <TextField layoutX="693.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <Label layoutX="369.0" layoutY="351.0" text="= 10 +">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="430.0" layoutY="374.0" text="Armor" />
+                        <Label layoutX="484.0" layoutY="375.0" text="Shield" />
+                        <Label layoutX="541.0" layoutY="374.0" text="Dex" />
+                        <Label layoutX="598.0" layoutY="375.0" text="Size" />
+                        <Label layoutX="645.0" layoutY="375.0" text="Natural" />
+                        <Label layoutX="690.0" layoutY="375.0" text="Deflection" />
+                        <TextField layoutX="752.0" layoutY="352.0" prefHeight="25.0" prefWidth="47.0" />
+                        <Label layoutX="750.0" layoutY="375.0" text="Misc Mod" />
+                        <TableView layoutX="271.0" layoutY="396.0" prefHeight="200.0" prefWidth="528.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Saves" />
+                            <TableColumn prefWidth="75.0" text="TOTAL" />
+                              <TableColumn prefWidth="75.0" text="Base Save" />
+                              <TableColumn prefWidth="75.0" text="Ability Mod" />
+                              <TableColumn prefWidth="75.0" text="Magic Mod" />
+                              <TableColumn prefWidth="75.0" text="Misc Mod" />
+                              <TableColumn prefWidth="75.0" text="Temp Mod" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Second Page">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+
+                        <TextField fx:id="rollCount" layoutX="301.0" layoutY="14.0" />
+                        <TextField fx:id="rollDie" layoutX="513.0" layoutY="14.0" />
+                        <TextField fx:id="rollMod" layoutX="726.0" layoutY="14.0" />
+                        <Button fx:id="rollButton" layoutX="677.0" layoutY="68.0" mnemonicParsing="false" text="Roll!" />
+                        <TextField fx:id="rollOutput" editable="false" layoutX="726.0" layoutY="68.0" />
+                        <Text layoutX="265.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll:" />
+                        <Text layoutX="709.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
+                        <Text layoutX="496.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

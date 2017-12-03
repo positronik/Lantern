@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <RadioButton fx:id="lookupFeats" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Feats" />
+      <RadioButton fx:id="lookupEquipment" layoutX="111.0" layoutY="14.0" mnemonicParsing="false" text="Equipment" />
+      <RadioButton fx:id="lookupSpells" layoutX="240.0" layoutY="14.0" mnemonicParsing="false" text="Spells" />
+      <TextField fx:id="lookupText" layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="252.0" promptText="Search terms" />
+      <Button fx:id="lookupGo" layoutX="266.0" layoutY="45.0" mnemonicParsing="false" text="Go" />
+      <ListView fx:id="lookupList" layoutX="14.0" layoutY="86.0" prefHeight="117.0" prefWidth="292.0" />
+      <Button fx:id="lookupButton" layoutX="14.0" layoutY="203.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="292.0" text="Look up">
+         <padding>
+            <Insets bottom="1.0" top="1.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="358.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Roll Scores">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scores are determined by rolling four six-sided dice and subtracting the lowest roll from the total (i.e., 4d6, drop the lowest). This is done six times and each result can then be applied to a score." wrappingWidth="330.0" />
+                  <Text layoutX="14.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a roll from the result list and click the name of the ability to assign it." wrappingWidth="330.0" />
+                  <Button fx:id="assignstr" layoutX="46.0" layoutY="145.0" mnemonicParsing="false" prefWidth="102.0" text="Strength" />
+                  <Button fx:id="assigndex" layoutX="46.0" layoutY="181.0" mnemonicParsing="false" prefWidth="102.0" text="Dexterity" />
+                  <Button fx:id="assigncon" layoutX="46.0" layoutY="217.0" mnemonicParsing="false" prefWidth="102.0" text="Constitution" />
+                  <Button fx:id="assignint" layoutX="46.0" layoutY="253.0" mnemonicParsing="false" prefWidth="102.0" text="Intelligence" />
+                  <Button fx:id="assignwis" layoutX="46.0" layoutY="289.0" mnemonicParsing="false" prefWidth="102.0" text="Wisdom" />
+                  <Button fx:id="assigncha" layoutX="46.0" layoutY="325.0" mnemonicParsing="false" prefWidth="102.0" text="Charisma" />
+                  <TextField fx:id="strRoll" layoutX="153.0" layoutY="145.0" prefWidth="50.0" />
+                  <TextField fx:id="dexRoll" layoutX="153.0" layoutY="181.0" prefWidth="50.0" />
+                  <TextField fx:id="conRoll" layoutX="153.0" layoutY="217.0" prefWidth="50.0" />
+                  <TextField fx:id="intRoll" layoutX="153.0" layoutY="253.0" prefWidth="50.0" />
+                  <TextField fx:id="wisRoll" layoutX="153.0" layoutY="289.0" prefWidth="50.0" />
+                  <TextField fx:id="chaRoll" layoutX="153.0" layoutY="325.0" prefWidth="50.0" />
+                  <Button fx:id="rollScores" layoutX="213.0" layoutY="145.0" mnemonicParsing="false" prefWidth="100.0" text="Roll">
+                     <padding>
+                        <Insets bottom="1.0" top="1.0" />
+                     </padding>
+                  </Button>
+                  <ListView fx:id="abRollList" layoutX="213.0" layoutY="168.0" prefHeight="188.0" prefWidth="100.0" />
+                  <Button fx:id="applyRolls" layoutX="149.0" layoutY="361.0" mnemonicParsing="false" text="Apply" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Point Buy">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scores are determined by allocating points as desired from a starting pool. You may subtract points from scores to increase your maximum." wrappingWidth="308.0" />
+                  <Label layoutX="46.0" layoutY="87.0" text="Starting Amount:" />
+                  <ChoiceBox fx:id="startingPoints" layoutX="163.0" layoutY="82.0" prefWidth="150.0" />
+                  <Label layoutX="20.0" layoutY="123.0" text="Strength" />
+                  <Label layoutX="20.0" layoutY="159.0" text="Dexterity" />
+                  <Label layoutX="20.0" layoutY="195.0" text="Constitution" />
+                  <Label layoutX="20.0" layoutY="231.0" text="Intelligence" />
+                  <Label layoutX="20.0" layoutY="267.0" text="Wisdom" />
+                  <Label layoutX="20.0" layoutY="303.0" text="Charisma" />
+                  <TextField fx:id="strPoints" layoutX="107.0" layoutY="118.0" prefWidth="50.0" text="10" />
+                  <TextField fx:id="dexPoints" layoutX="107.0" layoutY="154.0" prefWidth="50.0" text="10" />
+                  <TextField fx:id="conPoints" layoutX="107.0" layoutY="190.0" prefWidth="50.0" text="10" />
+                  <TextField fx:id="intPoints" layoutX="107.0" layoutY="226.0" prefWidth="50.0" text="10" />
+                  <TextField fx:id="wisPoints" layoutX="107.0" layoutY="262.0" prefWidth="50.0" text="10" />
+                  <TextField fx:id="chaPoints" layoutX="107.0" layoutY="298.0" prefWidth="50.0" text="10" />
+                  <Button fx:id="strPointsMinus" layoutX="157.0" layoutY="118.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="strPointsPlus" layoutX="185.0" layoutY="118.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="dexPointsMinus" layoutX="157.0" layoutY="154.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="dexPointsPlus" layoutX="185.0" layoutY="154.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="conPointsMinus" layoutX="157.0" layoutY="190.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="conPointsPlus" layoutX="185.0" layoutY="190.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="intPointsMinus" layoutX="157.0" layoutY="226.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="intPointsPlus" layoutX="185.0" layoutY="226.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="wisPointsMinus" layoutX="157.0" layoutY="262.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="wisPointsPlus" layoutX="185.0" layoutY="262.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="chaPointsMinus" layoutX="157.0" layoutY="298.0" mnemonicParsing="false" text="–">
+                     <tooltip>
+                        <Tooltip text="Subtract HP" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="chaPointsPlus" layoutX="185.0" layoutY="298.0" mnemonicParsing="false" text="+">
+                     <tooltip>
+                        <Tooltip text="Add HP" />
+                     </tooltip>
+                  </Button>
+                  <Label layoutX="223.0" layoutY="118.0" text="Remaining Points" />
+                  <TextField fx:id="pointsLeft" layoutX="256.0" layoutY="144.0" prefWidth="50.0" />
+                  <Button fx:id="pointCosts" layoutX="250.0" layoutY="205.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="63.0" text="Ability Score Costs" wrapText="true" />
+                  <Button fx:id="resetPoints" layoutX="253.0" layoutY="298.0" mnemonicParsing="false" text="Reset" />
+                  <Button fx:id="applyPoints" layoutX="150.0" layoutY="334.0" mnemonicParsing="false" text="Apply" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
